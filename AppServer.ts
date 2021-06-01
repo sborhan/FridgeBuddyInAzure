@@ -7,6 +7,6 @@ import * as bodyParser from 'body-parser';
 import {App} from './App';
 
 let server: any = new App().expressApp;
-server.listen(4000, () => {
-    console.log("Listening to port 4000");
+server.listen( process.env.PORT || 4000, () => {
+    console.log("Listening to port 4000 or Azure port");
 });
