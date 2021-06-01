@@ -5,7 +5,7 @@ class DataAccess {
     static mongooseConnection: Mongoose.Connection;
     //static DB_CONNECTION_STRING:string = 'mongodb://dbAdmin:test@localhost:27017/fridge?authSource=admin';
     // static DB_CONNECTION_STRING:string = 'mongodb+srv://FridgeBuddy:ilovesaasclass@fridgebuddy.fych5.mongodb.net/fridge?retryWrites=true&w=majority'
-    static DB_CONNECTION_STRING:string = 'mongodb+srv://FridgeBuddy:fridge@fridgebuddy.fych5.mongodb.net/fridgeInAzure?retryWrites=true&w=majority'
+    static DB_CONNECTION_STRING:string ='mongodb+srv://FridgeBuddy:fridge@fridgebuddy.fych5.mongodb.net/fridgeInAzure?retryWrites=true&w=majority'
 
     constructor () {
         DataAccess.connect();
