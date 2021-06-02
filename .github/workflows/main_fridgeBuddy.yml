@@ -22,7 +22,7 @@ jobs:
         node-version: '14.x'
 
     - name: npm install, build, and test
-      run: 
+      run: |
         npm install
         npm run build --if-present
         npm run test --if-present
@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'fridgeBuddy'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_e42f1610b05a40c995be6e83a3897f83 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_ab0a85af261449ab8de5df76d44beb58 }}
         package: .
